@@ -8,7 +8,7 @@ html, body {
 }
 
 section {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: center;
   left: 0;
@@ -17,7 +17,7 @@ section {
   transform: translateY(-50%);
 }
 
-.carousel-preview-container {
+section .carousel-preview-container {
   position: relative;
   display: flex;
   align-items: center;
@@ -27,15 +27,15 @@ section {
   height: 420px;
 }
 
-.carousel-preview-container .carousel-forward-btn {
+section .carousel-preview-container .carousel-forward-btn {
   right: -15px;
 }
 
-.carousel-preview-container .carousel-back-btn {
+section .carousel-preview-container .carousel-back-btn {
   left: -25px;
 }
 
-.carousel-preview-container .carousel-nav-style {
+section .carousel-preview-container .carousel-nav-style {
   position: absolute;
   display: none;
   box-sizing: border-box;
@@ -50,13 +50,13 @@ section {
   transition: all .15s linear;
 }
 
-.carousel-preview-container .carousel-nav-style:hover {
+section .carousel-preview-container .carousel-nav-style:hover {
   scale: 1.1;
   background-color: white;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
-.carousel-preview-container .forward-arrow {
+section .carousel-preview-container .forward-arrow {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -70,7 +70,7 @@ section {
   -webkit-transform: rotate(-45deg);
 }
 
-.carousel-preview-container .reverse-arrow {
+section .carousel-preview-container .reverse-arrow {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -83,13 +83,13 @@ section {
   -webkit-transform: rotate(135deg);
 }
 
-.carousel-preview-container .carousel-overflow-container {
+section .carousel-preview-container .carousel-overflow-container {
   position: absolute;
   overflow: hidden;
   inset: 0 0 -2px 0;
 }
 
-.carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container {
+section .carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container {
   height: 100%;
   padding-top: 2px;
   white-space: nowrap;
@@ -97,7 +97,7 @@ section {
   font-size: 0;
 }
 
-.carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card {
+section .carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card {
   white-space: normal;
   position: relative;
   margin: 0 0 0 0;
@@ -107,20 +107,20 @@ section {
   transition: all .15s linear;
 }
 
-.carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card a {
+section .carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card a {
   text-decoration: none;
   color: #3e474c;
   transition: all .15s linear;
 }
 
-.carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card .post-img {
+section .carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card .post-img {
   position: relative;
   border-radius: 6px;
   overflow: hidden;
   aspect-ratio: 16 / 9;
 }
 
-.carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card .post-img img {
+section .carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card .post-img img {
   position: absolute;
   transform-origin: center center;
   width: 100%;
@@ -128,13 +128,13 @@ section {
   transition: all 1.5s cubic-bezier(0.1, 0.5, 1, 1);
 }
 
-.carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card .post-img:hover img {
+section .carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card .post-img:hover img {
   top: 0;
   transform: scale(1.1, 1.1);
   opacity: .8;
 }
 
-.carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card .alignmenDiv {
+section .carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card .alignmenDiv {
   position: absolute;
   box-sizing: border-box;
   inset: 0 0 0 0;
@@ -142,7 +142,7 @@ section {
   padding: 0 0;
 }
 
-.carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card .alignmenDiv h2 {
+section .carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card .alignmenDiv h2 {
   font-size: 22px;
   font-weight: 400;
   line-height: 1.2em;
@@ -154,11 +154,11 @@ section {
   text-overflow: ellipsis;
 }
 
-.carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card .alignmenDiv h2:hover {
+section .carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card .alignmenDiv h2:hover {
   text-decoration: underline;
 }
 
-.carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card .alignmenDiv p {
+section .carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card .alignmenDiv p {
   font-size: 18px;
   line-height: 1.4em;
   color: #555 !important;
@@ -171,7 +171,7 @@ section {
   text-overflow: ellipsis;
 }
 
-.carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card .alignmenDiv .button {
+section .carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card .alignmenDiv .button {
   position: relative;
   text-decoration: none;
   border: none;
@@ -188,13 +188,13 @@ section {
   border-bottom: 1px solid #bfc8d7;
 }
 
-.carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card .alignmenDiv .button p {
+section .carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card .alignmenDiv .button p {
   font-size: 12px;
   margin: 0;
   padding: 4px 4px;
 }
 
-.carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card .alignmenDiv .button p:after {
+section .carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card .alignmenDiv .button p:after {
   content: " ";
   position: absolute;
   margin: 0 0 0 8px;
@@ -207,19 +207,19 @@ section {
   border-left: 5px solid #5b6b84;
 }
 
-.carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card .alignmenDiv .button:hover {
+section .carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card .alignmenDiv .button:hover {
   background-color: lightgrey;
 }
 
-.carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card:hover {
+section .carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card:hover {
   transform: translateY(-2px);
 }
 
-.carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card:hover h2 a {
+section .carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card:hover h2 a {
   color: red !important;
 }
 
-.carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card:first-child {
+section .carousel-preview-container .carousel-overflow-container .carousel-previewCard-nowrap-container .single-preview-card:first-child {
   margin: 0 0 0 -30px;
 }
 
